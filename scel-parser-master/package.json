@@ -1,0 +1,44 @@
+{
+  "name": "scel-parser",
+  "version": "1.0.2",
+  "description": "Sogou cell dict parser",
+  "keywords": [
+    "sogou",
+    "scel",
+    "dict",
+    "parser"
+  ],
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "typings": "./dist/src/index.d.ts",
+  "scripts": {
+    "build": "rm -rf ./dist && tsc",
+    "dev": "rm -rf ./dist && tsc -w & NODE_ENV=dev nodemon ./dist/src/cmd.js",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.com"
+  },
+  "bin": {
+    "scel-parser": "./dist/src/cmd.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jike-engineering/scel-parser.git"
+  },
+  "author": "",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/jike-engineering/scel-parser/issues"
+  },
+  "homepage": "https://github.com/jike-engineering/scel-parser#readme",
+  "devDependencies": {
+    "@types/lodash": "^4.14.149",
+    "@types/node": "^12.12.14",
+    "nodemon": "^2.0.1",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}

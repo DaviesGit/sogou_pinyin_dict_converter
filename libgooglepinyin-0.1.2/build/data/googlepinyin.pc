@@ -1,0 +1,10 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include/googlepinyin
+
+Name: googlepinyin
+Description: Google Pinyin library (Fork from android)
+Version: 1.0
+Cflags: -I/usr/include/googlepinyin
+Libs: -L/usr/lib -lgooglepinyin

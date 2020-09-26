@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/dictbuilder.dir/pinyinime_dictbuilder.cpp.o  -o dictbuilder -Wl,-rpath,/a/project/sogou_pinyin_dict/libgooglepinyin-0.1.2/build/src -rdynamic ../src/libgooglepinyin.so.0.1.0 -lpthread 
